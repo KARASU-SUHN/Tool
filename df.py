@@ -10,3 +10,14 @@ df.loc[['SearchContent']]
 
 # read csv/txt data
 data=pandas.read_csv(‘filename.txt’, sep=’ ‘, header=None, names=[“Column1”, “Column2”])
+
+
+# Unzip .tar.gz in Linux  https://kinsta.com/knowledgebase/unzip-tar-gz/
+#Extract .tar.gz file to current working directory:
+tar -xf filename.tar.gz
+# Extract .tar.gz file to current working directory and print output:
+tar -xvf filename.tar.gz
+# Extract .tar.gz file to a different working directory:
+tar -xf filename.tar.gz -C /home/user/files
+# Extract file1 and directory1 from .tar.gz file to current working directory:
+tar -xf filename.tar.gz file1 directory1
