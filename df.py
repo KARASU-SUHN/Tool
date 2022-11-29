@@ -21,3 +21,7 @@ tar -xvf filename.tar.gz
 tar -xf filename.tar.gz -C /home/user/files
 # Extract file1 and directory1 from .tar.gz file to current working directory:
 tar -xf filename.tar.gz file1 directory1
+
+#find projects with platform of NPM
+npm = pwp[pwp['platform'].fillna(0).str.contains("NPM",na=False)] 
+
