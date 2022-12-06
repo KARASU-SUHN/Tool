@@ -25,3 +25,4 @@ tar -xf filename.tar.gz file1 directory1
 #find projects with platform of NPM
 npm = pwp[pwp['platform'].fillna(0).str.contains("NPM",na=False)] 
 
+mv example1.txt example2.txt #rename file name in Linux
