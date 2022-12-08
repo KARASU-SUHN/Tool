@@ -26,3 +26,5 @@ tar -xf filename.tar.gz file1 directory1
 npm = pwp[pwp['platform'].fillna(0).str.contains("NPM",na=False)] 
 
 mv example1.txt example2.txt #rename file name in Linux
+
+cat <filepath> #command for open a file in linux
