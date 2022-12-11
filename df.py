@@ -28,3 +28,9 @@ npm = pwp[pwp['platform'].fillna(0).str.contains("NPM",na=False)]
 mv example1.txt example2.txt #rename file name in Linux
 
 cat <filepath> #command for open a file in linux
+
+
+from PIL import Image
+image = Image.open('path.jpeg')
+new_image = image.resize((240, 320)) #resize
+new_image.save('...jpeg')
