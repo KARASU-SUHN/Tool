@@ -47,3 +47,13 @@ df_merged = reduce(lambda  left,right: pd.merge(left,right,on=['DATE'],
 # if you want to fill the values that don't exist in the lines of merged dataframe simply fill with required strings as
 df_merged = reduce(lambda  left,right: pd.merge(left,right,on=['DATE'],
                                             how='outer'), data_frames).fillna('void')
+
+#check type of df
+df.dtypes
+#convert data type as int or other 
+df['column name'] = df['column name'].astype(int)
+#Extract data based on certain criteria by rows
+df = df[df["column"] > 0]
+#by columns
+df = df[["col_1", "col_2"]]
+
