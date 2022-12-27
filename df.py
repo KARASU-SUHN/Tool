@@ -56,4 +56,5 @@ df['column name'] = df['column name'].astype(int)
 df = df[df["column"] > 0]
 #by columns
 df = df[["col_1", "col_2"]]
-
+#rename
+df_new = df.rename(columns={'A': 'Col_1'}, index={'ONE': 'Row_1'})
