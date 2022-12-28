@@ -65,3 +65,7 @@ df.reset_index()
 
 #contain some specfic symbol  #author=df.loc[df['unix'].str.contains('@')]
 df.loc[df['E'].str.contains('oo')]
+
+
+#Expand pandas dataframe from row-wise to column-wise
+#https://stackoverflow.com/questions/68393230/compare-two-pandas-df-columns-with-string-values
