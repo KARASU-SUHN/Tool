@@ -58,6 +58,10 @@ df = df[df["column"] > 0]
 df = df[["col_1", "col_2"]]
 #rename
 df_new = df.rename(columns={'A': 'Col_1'}, index={'ONE': 'Row_1'})
+#reset index
+df.reset_index()
+
+
 
 #contain some specfic symbol  #author=df.loc[df['unix'].str.contains('@')]
 df.loc[df['E'].str.contains('oo')]
