@@ -69,3 +69,13 @@ df.loc[df['E'].str.contains('oo')]
 
 #Expand pandas dataframe from row-wise to column-wise
 #https://stackoverflow.com/questions/68393230/compare-two-pandas-df-columns-with-string-values
+
+## split dataframe
+df = pd.DataFrame([1,2,3,4,5,6,7,8,9,10,11], columns=['TEST'])
+df_split = np.array_split(df, 3)
+# ...you get 3 sub-dataframes:
+df_split[0] # 1, 2, 3, 4
+df_split[1] # 5, 6, 7, 8
+df_split[2] # 9, 10, 11
+# With split_dataframe:
+df_split2 = split_dataframe(df, chunk_size=3)
