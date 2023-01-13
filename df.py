@@ -10,7 +10,7 @@ df.loc[['SearchContent']]
 
 # read csv/txt data
 data=pandas.read_csv(‘filename.txt’, sep=’ ‘, header=None, names=[“Column1”, “Column2”])
-#if meet some error add:  
+#if meet some error add:   ';' expected after '"'
 (error_bad_lines=False)
 
 
