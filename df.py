@@ -10,6 +10,8 @@ df.loc[['SearchContent']]
 
 # read csv/txt data
 data=pandas.read_csv(‘filename.txt’, sep=’ ‘, header=None, names=[“Column1”, “Column2”])
+#if meet some error add:  
+(error_bad_lines=False)
 
 
 # Unzip .tar.gz in Linux  https://kinsta.com/knowledgebase/unzip-tar-gz/
