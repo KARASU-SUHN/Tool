@@ -49,6 +49,8 @@ df_merged = reduce(lambda  left,right: pd.merge(left,right,on=['DATE'],
 # if you want to fill the values that don't exist in the lines of merged dataframe simply fill with required strings as
 df_merged = reduce(lambda  left,right: pd.merge(left,right,on=['DATE'],
                                             how='outer'), data_frames).fillna('void')
+#select several columns as a new df
+df_new = df[['col1', 'col2']]
 
 #check type of df
 df.dtypes
