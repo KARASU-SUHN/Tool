@@ -2,6 +2,9 @@
 # find elements in df1 that are not in df2 df1>df2
 df_1notin2 = df1[~(df1['Name'].isin(df2['Name']) & df1['Age'].isin(df2['Age']))].reset_index(drop=True)
 
+## find same elements in diff df col
+from functools import reduce
+list(reduce(set.intersection, map(set, [df1.A, df2.A, df3.A])))
 
 # Locating with characters  https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Index.get_loc.html
 df.set_index("col_1",inplace=True)
