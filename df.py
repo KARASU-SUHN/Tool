@@ -86,3 +86,6 @@ df_split[1] # 5, 6, 7, 8
 df_split[2] # 9, 10, 11
 # With split_dataframe:
 df_split2 = split_dataframe(df, chunk_size=3)
+
+#sort pandas dataframe from one column
+sorted_df = df.sort_values(by=['Column_name'], ascending=True)
