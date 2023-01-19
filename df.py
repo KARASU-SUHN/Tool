@@ -10,6 +10,11 @@ list(reduce(set.intersection, map(set, [df1.A, df2.A, df3.A])))
 df.set_index("col_1",inplace=True)
 df.loc[['SearchContent']]
 
+#Check if Exact String Exists in Column
+(df['col'].eq('exact_string')).any()
+#Check if Partial String Exists in Column
+df['col'].str.contains('partial_string').any()
+
 
 # read csv/txt data
 data=pandas.read_csv(‘filename.txt’, sep=’ ‘, header=None, names=[“Column1”, “Column2”])
