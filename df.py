@@ -94,7 +94,3 @@ df_split2 = split_dataframe(df, chunk_size=3)
 
 #sort pandas dataframe from one column
 sorted_df = df.sort_values(by=['Column_name'], ascending=True)
-
-
-##matplotlib color
-https://matplotlib.org/stable/gallery/color/named_colors.html
