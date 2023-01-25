@@ -9,3 +9,7 @@ plt.axhline(y=np.nanmean(df.y), color='red', linestyle='--', linewidth=3, label=
 
 #add vertcal line at median value of y
 plt.axvline(x=np.nanmedian(df.y), color='red', linestyle='--', linewidth=3, label='Avg')
+
+
+##matplotlib color
+https://matplotlib.org/stable/gallery/color/named_colors.html
