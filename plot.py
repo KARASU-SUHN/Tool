@@ -13,3 +13,4 @@ plt.axvline(x=np.nanmedian(df.y), color='red', linestyle='--', linewidth=3, labe
 
 ##matplotlib color
 https://matplotlib.org/stable/gallery/color/named_colors.html
+https://www.colordic.org/
